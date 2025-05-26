@@ -1,148 +1,193 @@
 * { 
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 html {
-     scroll-behavior: smooth;
-     scroll-padding-top: 75px;
-     font-family: "Italiana", sans-serif;
-     font-weight: 400;
-     font-style: normal;
+	scroll-behavior: smooth;
+	scroll-padding-top: 75px;
+	font-family: "Italiana", sans-serif;
+	font-weight: 400;
+	font-style: normal;
 }
 body {
-     background-color: #fffbf7;
+	background-color: #fffbf7;
 }
 header {
-     display: flex;
-     flex-direction: row;
-     flex-wrap: nowrap;
-     justify-content: center;
-     align-items: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
 }
 header a { text-decoration: none; }
 header a:link { color: #333; }
 header a:visited { color: #333; }
 header a:hover { color: #5c7d9d; }
 nav {
-     position: sticky;
-     top: 0;
-     background-color: #fffbf7;
-     overflow: hidden;
-     display: flex;
-     flex-direction: row;
-     flex-wrap: nowrap;
-     justify-content: center;
-     font-size: 1.2rem;
-     gap: 30px;
-     padding: 15px;
-     border-bottom: 1px solid #333;
+	position: sticky;
+	top: 0;
+	background-color: #fffbf7;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	font-size: 1.2rem;
+	gap: 30px;
+	padding: 15px;
+	border-bottom: 1px solid #333;
 }
 nav a { text-decoration: none; }
 nav a:link { color: #333; }
 nav a:visited { color: #333; }
 nav a:hover { color: #5c7d9d; }
 h1 {
-     font-size: 2rem;
-     font-weight: normal;
-     text-align: left;
-     color: #333;
+	font-size: 2rem;
+	font-weight: normal;
+	text-align: left;
+	color: #333;
 }
 h2 {
-     font-size: 1.5rem;;
-     font-weight: normal;
-     text-align: center;
-     color: #5c7d9d;
-     font-weight: 700;
+	font-size: 1.5rem;;
+	font-weight: normal;
+	text-align: center;
+	color: #5c7d9d;
+	font-weight: 700;
 }
 h3 {
-     font-size: 1.2rem;;
-     font-weight: normal;
-     text-align: center;
-     color: #5c7d9d;
-     font-weight: 700;
-     text-decoration: underline;
+	font-size: 1.2rem;;
+	font-weight: normal;
+	text-align: center;
+	color: #5c7d9d;
+	font-weight: 700;
+	text-decoration: underline;
 }
 p {
-     font-family: "Ledger", serif;
-     text-align: justify;
-     font-size: 16px;
-     color: #333;
+	font-family: "Ledger", serif;
+	text-align: justify;
+	color: #333;
 }
 footer {
-     color: #333;
-     font-size: .75rem;
-     text-align: center;
-     margin: 20px 0 15px 0;
+	color: #333;
+	font-size: .75rem;
+	text-align: center;
+	margin: 20px 0 15px 0;
 }
 
 #logo {
-     width:  15%;
-     height: 15%;
+	width:  15%;
+	height: 15%;
 }
 .main-container {
-     display: flex;
-     flex-direction: column;
-     flex-wrap: nowrap;
-     justify-content: center;
-     align-items: center;
-     margin-top: 40px;
-     gap: 40px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	margin-top: 40px;
+	gap: 40px;
 }
 .about-container {
-     display: flex;
-     flex-direction: column;
-     flex-wrap: nowrap;
-     justify-content: flex-start;
-     align-items: flex-start;
-     margin: 0 22%;
-     gap: 20px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin: 0 22%;
+	gap: 20px;
 }
 .services-container {
-     display: flex;
-     flex-direction: row;
-     flex-wrap: nowrap;
-     justify-content: flex-start;
-     align-items: flex-start;
-     margin: 0 22%;
-     gap: 20px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	width: 75%;
+	border: 1px solid #333;
+	border-radius: 15px;
+	padding: 40px;
+	gap: 32px;
+
+	h3 {
+		margin: 0 0 10px 0;
+	}
+
+	p {
+		text-align: center;
+	}
+}
+.services-list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 20px;
 }
 .service-card {
-     padding: 15px;
-     border: 1px solid #333;
-     border-radius: 15px;
-
-     p {
-          margin: 8px 0;
-     }
+	padding: 10px;
+	border: 1px solid #333;
+	border-radius: 15px;
+	text-align: center;
 }
+
+.contact-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+
+	button {
+		font-family: "Ledger", serif;
+		padding: 10px 15px;
+		background-color: transparent;
+		border: 1px solid #333;
+		border-radius: 5px;
+	}
+	button { text-decoration: none; }
+	button:link { color: #333; }
+	button:hover {
+		cursor: pointer;
+		color: #fffbf7;
+		background-color: #5c7d9d;
+		border: 1px solid #5c7d9d;
+	}
+}
+
 .blog-container {
-     display: flex;
-     flex-direction: column;
-     flex-wrap: nowrap;
-     justify-content: flex-start;
-     align-items: flex-start;
-     margin: 0 22%;
-     gap: 20px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin: 0 22%;
+	gap: 20px;
 }
 .blog-card {
-     padding: 15px;
-     border: 1px solid #333;
-     border-radius: 15px;
+	padding: 15px;
+	border: 1px solid #333;
+	border-radius: 15px;
 
-     p {
-          margin: 8px 0;
-     }
+	p {
+		margin: 8px 0;
+	}
 }
+
 .headshot {
-     width: 200px;
-     height: 200px;
-     border: 1px solid #333;
-     border-radius: 50%;
-     filter: grayscale(100%);
+	width: 200px;
+	height: 200px;
+	border: 1px solid #333;
+	border-radius: 50%;
+	filter: grayscale(100%);
 }
 
-/* @media (min-width: 600px){
+/* Map */
+
+
+@media (min-width: 600px){
      h1 { font-size: 3em; }
      nav ul {
           display: flex;
@@ -161,7 +206,7 @@ footer {
           flex: 1;
      }
      dl { flex: 2; }
-     img { flex: 1; }
+     img { flex: 0; }
 
      label { text-align: right; }
 
@@ -170,7 +215,7 @@ footer {
 
 }
 
-@media (min-width: 1024px){
+/* @media (min-width: 1024px){
   @supports (display: grid){
     header { grid-area: header; }
     h3 {
