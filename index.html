@@ -9,33 +9,51 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Ledger&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="styles/styles.css">
-
-	<!-- Map -->
 </head>
 
 <body>
 	<!-- Header -->
 	<header id="home">
-		<img id="logo" src="./assets/whiledMind.png" alt="Whiled Mind Counseling PLLC logo" />
+		<!-- <img id="logo" src="./assets/whiledMind.png" alt="Whiled Mind Counseling PLLC logo" /> -->
 	</header>
-
+	
 	<!-- Menu Navigation Bar -->
 	<nav>
-		<a href="#home">home</a>
-		<a href="#about">about</a>
-		<a href="#services">services</a>
-		<a href="#contact">contact</a>
-		<a href="#blog">blog</a>
+		<div class="left-container">
+			<a href="#home"><h2>Whiled Mind Counseling</h2></a>
+		</div>
+		<div class="right-container">
+			<a href="#home">home</a>
+			<a href="#services">services</a>
+			<a href="#contact">contact</a>
+			<a href="#faq">faq</a>
+			<button onclick="window.open('https:\/\/payton-gowdy.clientsecure.me/contact-widget', '_blank')">Contact</button>
+		</div>
 	</nav>
 
 	<!-- Body -->
 	<main class="main-container">
+		<p>“Courage starts with showing up and letting ourselves be seen.” —Brené Brown</p>
+		<!-- <img src="./assets/copenhagen.jpeg" style="width: 90%; border-radius: 15px; opacity: .7; z-index: -1;"> -->
+		
+		<!-- Offerings -->
+		 <div class="offerings-container">
+			<div class="offering">
+				<img src="./assets/contact_phone.svg">
+				<p>Offers Telehealth<br>Appointments</p>
+			</div>
+			<div class="offering">
+				<img src="./assets/credit_card.svg">
+				<p>Accepts Online<br>Payments</p>
+			</div>
+			<div class="offering">
+				<img src="./assets/person_add.svg">
+				<p>Accepting<br>New Clients</p>
+			</div>
+		 </div>
 
-		<!-- Image -->
-		<img src="./assets/maine.jpg" alt="Maine" style="border-radius: 15px; border: 1px solid #333;"/>
-			
 		<!-- About -->
-		<h2 id="about" >About Whiled Mind Counseling</h2>
+		<h1 id="about">About</h1>
 		<div class="about-container">
 			<p>Whiled Mind believes the experience and relationship of therapy to be a curative factor—an antidote to our pain.</p>
 
@@ -55,52 +73,49 @@
 		</div>
 
 		<!-- Services -->
-		<h2 id="services">Services</h2>
+		<h1 id="services">Services</h1>
 		<div class="services-container">
 			<div id="services-list" class="services-list"></div>
-			<div>
-				<h3>Approaches</h3>
-				<div id="approaches"></div>
-			</div>
-			<div>
-				<h3>Fees</h3>
-				<p>45 minute session (in persion or online): $130</p>
+			<div class="services-cont-container">
+				<div>
+					<h2>Approaches</h2>
+					<div id="approaches"></div>
+				</div>
+				<div>
+				<div>
+					<h2>Fees</h2>
+					<p>45 minute session (in persion or online): $130</p>
+				</div>
+				</div>
 			</div>
 		</div>
 			
 		<!-- Contact -->
-		<h2 id="contact" ></h2>
-		<div class="contact-container">
-			<button onclick="window.open('https:\/\/payton-gowdy.clientsecure.me/contact-widget', '_blank')">Contact</button>
-			<h3>Location</h3>
-			<p>Let’s meet in person!</p>
-			<p>
-				Park West
-				7120 W I-40 Frontage Rd. Suite 460
-				Amarillo, TX 79106-2526
-			</p>
-			<a target="_blank" href="https://www.google.com/maps/dir/35.1698944,-101.8560512/7120+I-40+Frontage+Rd+%23460,+Amarillo,+TX+79106/@35.1826058,-101.9576537,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x870150496f960d65:0x211aaeffac2d6686!2m2!1d-101.9156664!2d35.188229?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoASAFQAw%3D%3D">Get Directions</a>
+		<div id="contact" class="contact-container">
+			<h1>Let's meet in person!</h1>
+			<div class="button-container">
+				<button class="square-button" onclick="window.open('https:\/\/www.google.com/maps/dir/35.1698944,-101.8560512/7120+I-40+Frontage+Rd+%23460,+Amarillo,+TX+79106/@35.1826058,-101.9576537,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x870150496f960d65:0x211aaeffac2d6686!2m2!1d-101.9156664!2d35.188229?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoASAFQAw%3D%3D', '_blank')">Get Directions</button>
+			</div>
+			<div class="address-container">
+				<p>
+					Park West<br>
+					7120 W I-40 Frontage Rd.<br>
+					Suite 460<br>
+					Amarillo, TX 79106-2526
+				</p>
+			</div>
 		</div>
 
-		<!-- Blog -->
-		<!-- <h2 id="blog" >Blog</h2>
-		<div class="blog-container">
-			<div class="blog-card">
-				<h3>Blog Post One</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+		<!-- FAQ -->
+		<h1 id="faq">FAQ</h1>
+		<div id="faq-list" class="faq-container">
+			<div></div>
+			<button type="button" class="collapsible">Do you accept insurance?</button>
+			<div class="content">
+				<p>Lorem ipsum...</p>
 			</div>
-			<div class="blog-card">
-				<h3>Blog Post Two</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-			</div>
-		</div> -->
-
+		</div>
+		
 		<!-- Headshot -->
 		<img class="headshot" src="./assets/headshot.jpeg" alt="Payton b. Gowdy MA, LPC" />
 		<p>Payton b. Gowdy MA, LPC</p>
@@ -109,6 +124,11 @@
 		<a href="https://www.psychologytoday.com/profile/1315028" class="sx-verified-seal"></a>
 		<script type="text/javascript" src="https://member.psychologytoday.com/verified-seal.js" data-badge="17" data-id="1315028" data-code="aHR0cHM6Ly93d3cucHN5Y2hvbG9neXRvZGF5LmNvbS9hcGkvdmVyaWZpZWQtc2VhbC9zZWFscy8xNy9wcm9maWxlLzEzMTUwMjg/Y2FsbGJhY2s9c3hjYWxsYmFjaw=="></script>
 		<!-- End Verification -->
+
+		<!-- Back to top -->
+		<button onclick="backToTop()" id="backToTop" title="Back to top">
+			<img src="assets/backToTop.png" style="width: 48px; height: 48px;"></svg>
+		</button>
 	</main>
 
 	<!-- Footer -->
@@ -117,6 +137,6 @@
 	</footer>
 
 	<script src="js/utils.js"></script>
-	<script src="js/map.js"></script>
+	<script src="js/faq.js"></script>
 </body>
 </html>
